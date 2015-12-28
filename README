@@ -1,0 +1,9 @@
+使用方式：
+
+引入ColorPicker.js，ColorPicker.css
+
+然后：
+
+    var colorPicker = new ColorPicker('colorPicker');
+
+其中colorPicker为class值
