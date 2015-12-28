@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>colorPicker</title>
+	<link rel="stylesheet" type="text/css" href="./colorPicker.css">
+</head>
+<body>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    font-family: 微软雅黑, 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    background: rgb(81, 81, 119);
+}
+h1{
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	margin-top: 100px;
+}
+.main{
+	width: 100px;
+	margin: 0 auto;
+}
+.main input[type="text"]{
+	display: block;
+    background: rgba(0,0,0,.4);
+    border: 1px solid #646364;
+    border-radius: 1px;
+    width: 300px;
+    height: 35px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-left: -100px;
+    color: #fff;
+    font-size: 16px;
+}
+.main button{
+	width: 300px;
+	height: 50px;
+	margin-left: -100px;
+}
+.main p{
+	width: 500px;
+	margin-left: -100px;
+	margin-top: 50px;
+	color: #fff;
+}
+input::-webkit-input-placeholder {
+	font-size: 12px;
+	line-height: 20px;
+    color: #fff;
+    padding-left: 10px;
+}
+input:-moz-placeholder {
+	font-size: 12px;
+	line-height: 20px;
+    color: #fff;
+    padding-left: 10px;
+}
+p.footer{
+	text-align: center;
+}
+p.footer a{
+	color: #fff;
+}
+</style>
+<h1>ColorPicker</h1>
+<div class="main">
+	<input type="text" class="colorPicker" placeholder="点击我呀~">
+	<button class="colorPicker">我是颜色选择按钮</button>
+	<p>var colorPicker = new ColorPicker( 'colorPicker' );</p>
+</div>
+<p class="footer"><a href="">Git地址</a></p>
+<script type="text/javascript" src="colorPicker.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	var input = document.querySelector(".choseColor");
+	var colorPicker = new ColorPicker( 'colorPicker' );
+}
+</script>
+</body>
+</html>
